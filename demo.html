@@ -29,15 +29,15 @@
 					var str="";
 					var submitValue=Input.value;
 					table+="<tr><td>"+
-					x[i].getElementsByTagName("USD")[0].childNodes.nodeValue*Input.value+
+					valueOf(x[i].getElementsByTagName("USD")[0].childNodes.nodeValue)*valueOf(Input.value)+
 					"</td><td>"+
-					x[i].getElementsByTagName("GBP")[0].childNodes.nodeValue*Input.value;
+					valueOf(x[i].getElementsByTagName("GBP")[0].childNodes.nodeValue)*valueOf(Input.value);
 					"</td><td>"+
-					x[i].getElementsByTagName("JPY")[0].childNodes.nodeValue*Input.value;
+					valueOf(x[i].getElementsByTagName("JPY")[0].childNodes.nodeValue)*valueOf(Input.value);
 					"</td><td>"+
-					x[i].getElementsByTagName("KRW")[0].childNodes.nodeValue*Input.value;
+					valueOf(x[i].getElementsByTagName("KRW")[0].childNodes.nodeValue)*valueOf(Input.value);
 					"</td><td>"+
-					x[i].getElementsByTagName("AUD")[0].childNodes.nodeValue*Input.value;
+					valueOf(x[i].getElementsByTagName("AUD")[0].childNodes.nodeValue)*valueOf(Input.value);
 					"</td></tr>";
 				}
 				document.getElementById("example").innerHTML = table;
