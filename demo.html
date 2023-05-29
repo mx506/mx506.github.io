@@ -23,7 +23,7 @@
 			}
 			function myFunction(xml){
 				const xmlDoc = xml.responseXML;
-				const x = xmlDoc.getElementByTagName("RATE");
+				const x = xmlDoc.getElementsByTagName("RATE");
 				let table="<tr><th>USD</tr></th><tr><th>GBP</tr></th><tr><th>JPY</tr></th><tr><th>KRW</tr></th><tr><th>AUD</tr></th>";
 				for(Let i=0;i<x.length;i++){
 					var str="";
